@@ -18,25 +18,31 @@
         header {
             background-color: yellow;
             height: 100px;
-
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
         }
 
         main {
             background-color: blue;
             height: 100px;
-
+            grid-column-start: 1;
+            grid-column-end: 2;
         }
 
         aside {
             background-color: green;
             height: 100px;
-
+            grid-column-start: 2;
+            grid-column-end: 3;
         }
 
         footer {
             background-color: red;
             height: 100px;
-
+            grid-column-start: 1;
+            grid-column-end: 3;
         }
 
         .container {
@@ -46,8 +52,9 @@
             /* este comando cria as colunas*/
             grid-template-rows: 20vh 70vh 10vh;
             /* este comando cria as linhas*/
-            grid-gap: 20px;
-            /* este comando define o*/
+            /* grid-gap: 20px;
+           este comando define o espaçamento*/
+
         }
     </style>
 </head>
