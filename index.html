@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #7159c1;
+
+        }
+
+        header {
+            background-color: yellow;
+            height: 100px;
+
+        }
+
+        main {
+            background-color: blue;
+            height: 100px;
+
+        }
+
+        aside {
+            background-color: green;
+            height: 100px;
+
+        }
+
+        footer {
+            background-color: red;
+            height: 100px;
+
+        }
+
+        .container {
+            display: grid;
+            /* isso inicia o grid*/
+            grid-template-columns: 3fr 1fr;
+            /* este comando cria as colunas*/
+            grid-template-rows: 20vh 70vh 10vh;
+            /* este comando cria as linhas*/
+            grid-gap: 20px;
+            /* este comando define o*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header></header>
+        <main></main>
+        <aside></aside>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
