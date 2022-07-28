@@ -17,32 +17,26 @@
 
         header {
             background-color: yellow;
-            height: 100px;
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 3;
-            grid-row-end: 4;
+
+            grid-area: h;
         }
 
         main {
             background-color: blue;
-            height: 100px;
-            grid-column-start: 1;
-            grid-column-end: 2;
+
+            grid-area: m;
         }
 
         aside {
             background-color: green;
-            height: 100px;
-            grid-column-start: 2;
-            grid-column-end: 3;
+
+            grid-area: a;
         }
 
         footer {
             background-color: red;
-            height: 100px;
-            grid-column-start: 1;
-            grid-column-end: 3;
+
+            grid-area: f;
         }
 
         .container {
@@ -54,17 +48,20 @@
             /* este comando cria as linhas*/
             /* grid-gap: 20px;
            este comando define o espaçamento*/
-
+            grid-template-areas: "h h"
+                "m a"
+                "f f"
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <header></header>
+        <header style="text-align: center; "> <a href="/page2.html">page2</a></header>
         <main></main>
         <aside></aside>
         <footer></footer>
+
     </div>
 </body>
 
